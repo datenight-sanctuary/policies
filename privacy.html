@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Date Night Sanctuary</title>
+  <style>
+    :root {
+      --bg:        #0d0d1a;
+      --surface:   #161628;
+      --border:    rgba(180, 160, 255, 0.12);
+      --lavender:  #b4a0ff;
+      --lavender2: #8b77dd;
+      --text:      #e8e0ff;
+      --muted:     rgba(232, 224, 255, 0.55);
+      --accent:    #7c5cfc;
+      --radius:    14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo-emoji { font-size: 32px; }
+    .app-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--lavender);
+      letter-spacing: 0.02em;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .effective {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 32px 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .intro strong { color: var(--lavender); }
+
+    section {
+      margin: 36px 0;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--lavender);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin: 18px 0 8px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul, ol {
+      margin: 8px 0 14px 20px;
+      color: var(--text);
+    }
+    li { margin-bottom: 6px; }
+    a {
+      color: var(--lavender);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: #fff; }
+
+    .highlight-box {
+      background: rgba(124, 92, 252, 0.08);
+      border: 1px solid rgba(124, 92, 252, 0.3);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+    .highlight-box strong { color: var(--lavender); }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .right-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .right-card .right-title {
+      font-weight: 600;
+      color: var(--lavender2);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .right-card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+    .contact-box h2 { border-bottom: none; margin-bottom: 8px; }
+    .contact-email {
+      display: inline-block;
+      background: rgba(124, 92, 252, 0.12);
+      border: 1px solid rgba(124, 92, 252, 0.3);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-family: monospace;
+      color: var(--lavender);
+      margin-top: 8px;
+      text-decoration: none;
+    }
+    .contact-email:hover { background: rgba(124, 92, 252, 0.22); color: #fff; }
+
+    /* ── Footer ── */
+    footer {
+      max-width: 720px;
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--lavender); }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+      .rights-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-row">
+    <span class="logo-emoji">🌿</span>
+    <span class="app-name">Date Night Sanctuary</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective date: 16 October 2026 &nbsp;·&nbsp; Version 1.0</p>
+</header>
+
+<main>
+
+  <div class="intro">
+    <strong>The short version:</strong> Everything in Date Night Sanctuary is stored <strong>only on your own device</strong>: your rescued animals, custom wheel ideas, and preferences. We do not operate any servers. The app may show optional ads served by Google AdMob, which collects limited device data for that purpose — you can opt out of personalised ads at any time. The only other external contact is a location search to OpenStreetMap's Nominatim service when you search for local date ideas.
+  </div>
+
+  <!-- 1. Who we are -->
+  <section>
+    <h2>1. Who we are</h2>
+    <p>Date Night Sanctuary is an indie app developed and published by an individual developer based in the United Kingdom. For the purposes of the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018, the developer acts as the <strong>data controller</strong>.</p>
+    <p>Contact details are at the bottom of this page.</p>
+  </section>
+
+  <!-- 2. Data we collect -->
+  <section>
+    <h2>2. What data we collect and what we don't</h2>
+
+    <h3>Data stored only on your device</h3>
+    <p>The app saves the following information to your device's local storage, using your device operating system's sandboxed app storage. <strong>This data never leaves your device and is never sent to us or any third party.</strong></p>
+    <ul>
+      <li>Your collection of rescued animals and their custom names</li>
+      <li>Custom ideas you have added to your date-night wheel</li>
+      <li>App settings (theme, display preferences)</li>
+      <li>The date and time of your last free spin (to enforce the weekly cooldown)</li>
+      <li>Your spin history and any in-app purchase entitlements</li>
+    </ul>
+
+    <h3>Location / venue search</h3>
+    <p>When you search for local date ideas (a feature available to subscribers), the app sends your entered city name or postcode to the <strong>Nominatim geocoding service</strong>, operated by the OpenStreetMap Foundation (OSMF). This is a public, free-to-use service. The query contains only the text you type. No device identifiers, no exact GPS coordinates, and no personal information are included.</p>
+
+    <div class="highlight-box">
+      <strong>Nominatim / OpenStreetMap Foundation</strong><br>
+      Operator: OpenStreetMap Foundation, 132 Maney Hill Road, Sutton Coldfield, West Midlands, B72 1JU, United Kingdom<br>
+      Privacy policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">osmfoundation.org/wiki/Privacy_Policy</a><br>
+      The text you type into the venue search field is transmitted to OSMF servers to return a list of matching places. OSMF may log this request as part of its normal server operations. We do not store, log, or process this query on our end.
+
+    </div>
+
+    <h3>In-app purchases</h3>
+    <p>Purchase transactions are processed entirely by <strong>Apple (App Store)</strong> or <strong>Google (Google Play)</strong>. We do not receive or store your payment card details. Purchase receipt verification is handled by RevenueCat, Inc. (our payment infrastructure provider); RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>. RevenueCat only receives an anonymised purchase receipt and a randomly generated app-user ID, with no name, email, or other identifying information.</p>
+
+    <h3>Local notifications</h3>
+    <p>The app schedules local push notifications on your device (for example, to let you know your weekly free spin is ready). These notifications are generated entirely on your device; no notification data is sent to our servers or any third party.</p>
+
+    <h3>Advertising (Google AdMob)</h3>
+    <p>The app displays optional advertisements served by <strong>Google AdMob</strong>, operated by Google LLC. To serve and measure ads, AdMob may collect and process the following data from your device:</p>
+    <ul>
+      <li>Device advertising identifier (IDFA on iOS, GAID on Android)</li>
+      <li>IP address (used to infer approximate location for ad targeting)</li>
+      <li>Device type, operating system version, and app interactions</li>
+      <li>Ad impression and click data</li>
+    </ul>
+    <p>On iOS, the app will ask for your permission before allowing AdMob to access your advertising identifier, using Apple's App Tracking Transparency (ATT) prompt. If you decline, AdMob will only serve non-personalised ads. On Android, you can opt out of personalised ads via Google Settings on your device.</p>
+    <div class="highlight-box">
+      <strong>Google AdMob</strong><br>
+      Operator: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+      Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a><br>
+      AdMob data use: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">support.google.com/admob/answer/6128543</a>
+    </div>
+
+    <h3>Ko-fi (voluntary donations)</h3>
+    <p>The app provides a link to our Ko-fi page for users who wish to make a voluntary donation to support development. Ko-fi is an external platform; clicking the link takes you to ko-fi.com, which is governed by <a href="https://ko-fi.com/privacy" target="_blank" rel="noopener">Ko-fi's own privacy policy</a>. We do not receive or process any payment or personal data through this link.</p>
+
+    <h3>Crash reports and analytics</h3>
+    <p>The app does <strong>not</strong> include any third-party analytics SDK (such as Firebase, Mixpanel, or Amplitude). The app does not collect usage analytics or diagnostics beyond what the Apple App Store or Google Play may gather at the platform level under their own privacy policies. We do not receive this data.</p>
+
+    <h3>Data we never collect</h3>
+    <ul>
+      <li>Your name, email address, or any account information (the app has no accounts)</li>
+      <li>Your precise GPS location</li>
+      <li>Your contacts, camera, microphone, or any other device sensor</li>
+      <li>Behavioural or usage analytics beyond what AdMob uses for ad serving</li>
+    </ul>
+  </section>
+
+  <!-- 3. Legal basis -->
+  <section>
+    <h2>3. Legal basis for processing (UK GDPR)</h2>
+    <p>Because all app data is stored locally on your device and we do not receive or process it, we are not acting as a data processor in respect of that data. For the external services the app uses:</p>
+    <ul>
+      <li><strong>Legitimate interests (UK GDPR Article 6(1)(f)):</strong> Transmitting a city name or postcode to Nominatim is necessary to provide the venue-search feature you have requested. This involves minimal data and no personal information beyond a place name or postcode.</li>
+      <li><strong>Consent (UK GDPR Article 6(1)(a)):</strong> Where AdMob serves personalised advertisements, this is based on your consent, given through Apple's App Tracking Transparency prompt (iOS) or Google's ad personalisation settings (Android). You may withdraw consent at any time through your device settings.</li>
+      <li><strong>Legitimate interests (UK GDPR Article 6(1)(f)):</strong> Where AdMob serves non-personalised advertisements, this is based on our legitimate interest in generating revenue to support the free version of the app.</li>
+    </ul>
+  </section>
+
+  <!-- 4. How long -->
+  <section>
+    <h2>4. How long we keep data</h2>
+    <p>All app data lives on your device and under your control. You can delete the app at any time, which will erase all locally stored data. You can also export or clear your data from within the app's Settings screen.</p>
+    <p>We do not hold copies of your data on any server, so there is nothing for us to delete or retain schedules to adhere to on our end.</p>
+  </section>
+
+  <!-- 5. Sharing -->
+  <section>
+    <h2>5. Who we share data with</h2>
+    <p>We do not sell your personal data. The data transmissions the app makes are listed below.</p>
+    <ul>
+      <li><strong>OpenStreetMap Foundation (Nominatim):</strong> city or postcode text for venue search, as described above.</li>
+      <li><strong>Apple or Google:</strong> purchase receipts handled by the platform's own payment systems.</li>
+      <li><strong>RevenueCat:</strong> purchase receipt verification, anonymised, with no personal data.</li>
+      <li><strong>Google AdMob:</strong> device advertising identifier and app interaction data for ad serving, as described above. Google's use of this data is governed by Google's privacy policy.</li>
+    </ul>
+    <p>We do not use data brokers. We do not share your data with any other third party for marketing or profiling purposes.</p>
+  </section>
+
+  <!-- 6. Children -->
+  <section>
+    <h2>6. Children's privacy</h2>
+    <p>Date Night Sanctuary is designed for adults planning romantic dates. It is not directed at persons under the age of 17. We do not knowingly collect any information from anyone under 17. If you believe someone under this age has used this app, please contact us and we will take steps to address this.</p>
+  </section>
+
+  <!-- 7. Security -->
+  <section>
+    <h2>7. Security</h2>
+    <p>All app data is stored in the sandboxed storage area provided by your device operating system. On iOS, this storage is protected by the device's hardware encryption and your passcode or biometric lock. On Android, it is protected by the Android Keystore system and device encryption. We do not operate servers or databases that could be breached.</p>
+  </section>
+
+  <!-- 8. Your rights -->
+  <section>
+    <h2>8. Your rights under UK GDPR</h2>
+    <p>Under the UK General Data Protection Regulation and the Data Protection Act 2018, you have the following rights:</p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-title">Right of access</div>
+        <p>You can view all data the app holds about you at any time via the Export / Backup feature in Settings.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Right to erasure</div>
+        <p>You can delete all app data by clearing app data in your device settings or by uninstalling the app.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Right to portability</div>
+        <p>Use the Export / Backup feature in Settings to download your data as a JSON file at any time.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Right to rectification</div>
+        <p>You can edit your collection, wheel ideas, and preferences directly within the app.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Right to object</div>
+        <p>You can opt out of personalised ads via your device settings. On iOS, use the ATT prompt or Settings → Privacy → Tracking. On Android, use Settings → Google → Ads.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Right to complain</div>
+        <p>You have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>.</p>
+      </div>
+    </div>
+
+    <p>To exercise any right, or if you have any questions about this policy, please contact us using the details below.</p>
+  </section>
+
+  <!-- 9. International transfers -->
+  <section>
+    <h2>9. International data transfers</h2>
+    <p>The Nominatim service is operated by the OpenStreetMap Foundation, a UK-registered charity. Nominatim servers are located in the UK and EU. No transfers outside of UK/EEA are involved for this service.</p>
+    <p>RevenueCat, Inc. is based in the United States. Any purchase receipt data processed by RevenueCat is governed by RevenueCat's own privacy policy and the UK/EU standard contractual clauses they maintain. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+    <p>Google LLC (AdMob) is based in the United States. Data transferred to Google for ad serving is governed by Google's privacy policy and processed under the UK/EU standard contractual clauses that Google maintains. You can review Google's data transfer mechanisms at <a href="https://business.safety.google/gdpr/" target="_blank" rel="noopener">business.safety.google/gdpr</a>.</p>
+  </section>
+
+  <!-- 10. Changes -->
+  <section>
+    <h2>10. Changes to this policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the effective date at the top of this page and, where appropriate, notify users through an in-app notice or App Store / Google Play release notes.</p>
+    <p>Continued use of the app after a change is posted constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <h2>Contact us</h2>
+    <p>If you have any questions about this privacy policy, would like to exercise your data rights, or have a concern about how your information is handled, please contact:</p>
+    <p><strong>Date Night Sanctuary</strong><br>
+    Independent developer, based in the United Kingdom</p>
+    <a class="contact-email" href="mailto:shanguaih@gmail.com">shanguaih@gmail.com</a>
+    <p style="margin-top:14px; font-size:13px; color:var(--muted);">We aim to respond to all privacy enquiries within 30 days in accordance with UK GDPR Article 12.</p>
+  </div>
+
+</main>
+
+<footer>
+  <span>© 2026 Date Night Sanctuary. All rights reserved.</span>
+  <span>
+    <a href="privacy.html">Privacy Policy</a>
+    &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a>
+  </span>
+</footer>
+
+</body>
+</html>

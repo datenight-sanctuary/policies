@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Date Night Sanctuary</title>
+  <style>
+    :root {
+      --bg:        #0d0d1a;
+      --surface:   #161628;
+      --border:    rgba(180, 160, 255, 0.12);
+      --lavender:  #b4a0ff;
+      --lavender2: #8b77dd;
+      --text:      #e8e0ff;
+      --muted:     rgba(232, 224, 255, 0.55);
+      --accent:    #7c5cfc;
+      --radius:    14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo-emoji { font-size: 32px; }
+    .app-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--lavender);
+      letter-spacing: 0.02em;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .effective {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 32px 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .intro strong { color: var(--lavender); }
+
+    section { margin: 36px 0; }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--lavender);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin: 18px 0 8px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul, ol {
+      margin: 8px 0 14px 20px;
+      color: var(--text);
+    }
+    li { margin-bottom: 6px; }
+    a {
+      color: var(--lavender);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: #fff; }
+
+    .highlight-box {
+      background: rgba(124, 92, 252, 0.08);
+      border: 1px solid rgba(124, 92, 252, 0.3);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+    .highlight-box strong { color: var(--lavender); }
+
+    .warning-box {
+      background: rgba(255, 170, 80, 0.06);
+      border: 1px solid rgba(255, 170, 80, 0.25);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: rgba(255, 220, 160, 0.85);
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+    .contact-box h2 { border-bottom: none; margin-bottom: 8px; }
+    .contact-email {
+      display: inline-block;
+      background: rgba(124, 92, 252, 0.12);
+      border: 1px solid rgba(124, 92, 252, 0.3);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-family: monospace;
+      color: var(--lavender);
+      margin-top: 8px;
+      text-decoration: none;
+    }
+    .contact-email:hover { background: rgba(124, 92, 252, 0.22); color: #fff; }
+
+    footer {
+      max-width: 720px;
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--lavender); }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-row">
+    <span class="logo-emoji">🌿</span>
+    <span class="app-name">Date Night Sanctuary</span>
+  </div>
+  <h1>Terms of Service</h1>
+  <p class="effective">Effective date: 16 October 2026 &nbsp;·&nbsp; Version 1.0</p>
+</header>
+
+<main>
+
+  <div class="intro">
+    <strong>Please read these terms carefully.</strong> By downloading or using Date Night Sanctuary, you agree to these Terms of Service. If you do not agree, please do not use the app. These terms are governed by the laws of <strong>England and Wales</strong>.
+  </div>
+
+  <!-- 1. About the app -->
+  <section>
+    <h2>1. About Date Night Sanctuary</h2>
+    <p>Date Night Sanctuary ("the App") is a mobile application that helps couples plan date nights. It features a spin wheel for date ideas, a virtual animal sanctuary collection, and a local venue finder. The App is published by an individual indie developer based in the United Kingdom ("we", "us", or "the Developer").</p>
+    <p>The App is available on iOS (Apple App Store) and Android (Google Play). Your use of the App is also subject to Apple's or Google's terms of service as applicable.</p>
+  </section>
+
+  <!-- 2. Eligibility -->
+  <section>
+    <h2>2. Eligibility and age</h2>
+    <p>You must be at least <strong>17 years old</strong> to download and use the App. By using the App, you confirm that you meet this age requirement.</p>
+    <p>The App is intended for adults planning romantic activities. It is not designed for or directed at children.</p>
+  </section>
+
+  <!-- 3. Licence -->
+  <section>
+    <h2>3. Licence to use the App</h2>
+    <p>Subject to your compliance with these Terms, we grant you a personal, non-exclusive, non-transferable, revocable licence to use the App on any device you own or control, solely for your personal, non-commercial use.</p>
+    <p>You may not:</p>
+    <ul>
+      <li>Copy, modify, or distribute the App or any portion of it</li>
+      <li>Reverse-engineer, decompile, or disassemble the App</li>
+      <li>Use the App for any commercial purpose or on behalf of any third party</li>
+      <li>Remove or alter any proprietary notices or labels in the App</li>
+      <li>Use the App in any way that violates applicable laws or regulations</li>
+    </ul>
+  </section>
+
+  <!-- 4. In-app purchases -->
+  <section>
+    <h2>4. In-app purchases</h2>
+
+    <h3>Purchasing</h3>
+    <p>The App offers optional paid features ("Local Dates") available as a one-time purchase. All purchases are processed through Apple (App Store) or Google (Google Play) and are subject to their respective terms and refund policies.</p>
+
+    <h3>Pricing</h3>
+    <p>Prices are displayed in the App before purchase in your local currency. Prices may vary by region and are subject to change. We will notify users of price changes through the App or App Store / Google Play listings.</p>
+
+    <h3>Refunds</h3>
+    <p>Refund requests are handled by Apple or Google under their respective policies. We are unable to process refunds directly. If you believe you are entitled to a refund, please contact Apple Support or Google Play Support.</p>
+
+    <div class="highlight-box">
+      <strong>Apple App Store:</strong> <a href="https://support.apple.com/en-gb/HT204084" target="_blank" rel="noopener">Report a problem with an App Store purchase</a><br>
+      <strong>Google Play:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Request a refund for a Google Play purchase</a>
+    </div>
+
+    <h3>Free features</h3>
+    <p>The core App, including the spin wheel, animal sanctuary, and free weekly spin, is available at no charge. We reserve the right to change which features are free or paid in future versions, with reasonable notice to existing users.</p>
+  </section>
+
+  <!-- 5. User content -->
+  <section>
+    <h2>5. Your content</h2>
+    <p>You may add custom date-night ideas to your spin wheel. This content is stored only on your device and is never transmitted to us. You are solely responsible for any custom content you add.</p>
+    <p>You agree not to add content that is unlawful, harmful, threatening, harassing, defamatory, obscene, or otherwise objectionable. Although we cannot see your locally stored content, we reserve the right to update or restrict the App if it is used in ways that violate these Terms.</p>
+  </section>
+
+  <!-- 6. Third-party services -->
+  <section>
+    <h2>6. Third-party services</h2>
+    <p>The App uses the following third-party services:</p>
+
+    <h3>OpenStreetMap / Nominatim</h3>
+    <p>Venue search is powered by <a href="https://nominatim.openstreetmap.org" target="_blank" rel="noopener">Nominatim</a>, operated by the OpenStreetMap Foundation under the <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener">Open Database Licence (ODbL)</a>. Map data © OpenStreetMap contributors. Use of this service is subject to the <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank" rel="noopener">Nominatim Usage Policy</a>.</p>
+
+    <h3>RevenueCat</h3>
+    <p>In-app purchase management is handled by RevenueCat, Inc. Use is subject to <a href="https://www.revenuecat.com/terms" target="_blank" rel="noopener">RevenueCat's Terms of Service</a>.</p>
+
+    <h3>Google AdMob</h3>
+    <p>The App may display advertisements served by Google AdMob, operated by Google LLC. By using the App, you acknowledge that ads may be shown and that AdMob may collect device data for this purpose, as described in our Privacy Policy. Ad serving is subject to <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policies</a>.</p>
+
+    <h3>Ko-fi</h3>
+    <p>The App provides an optional link to our Ko-fi page for voluntary donations to support development. Any donation is made directly through Ko-fi's platform and is entirely voluntary. Ko-fi's own terms and privacy policy govern any transaction made there.</p>
+
+    <h3>Apple App Store / Google Play</h3>
+    <p>The App is distributed through Apple's App Store and Google's Play Store. Your use of those platforms is subject to Apple's and Google's respective terms of service.</p>
+
+    <p>We are not responsible for the content, policies, or practices of any third-party service. Links to third-party websites or services from within the App do not constitute our endorsement of those services.</p>
+  </section>
+
+  <!-- 7. Disclaimer -->
+  <section>
+    <h2>7. Disclaimer of warranties</h2>
+    <div class="warning-box">
+      The App is provided on an <strong>"as is" and "as available" basis</strong> without warranties of any kind, whether express or implied. To the maximum extent permitted by applicable law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+    </div>
+    <p>We do not warrant that:</p>
+    <ul>
+      <li>The App will meet your requirements or expectations</li>
+      <li>The App will be available at all times, uninterrupted, or error-free</li>
+      <li>Venue information returned by the search feature is accurate, complete, or up to date</li>
+      <li>Any errors in the App will be corrected</li>
+    </ul>
+    <p>Venue data is sourced from OpenStreetMap, an open-source community project. We make no representations about the accuracy or suitability of any venue for your purposes. Always verify venue details before visiting.</p>
+  </section>
+
+  <!-- 8. Limitation of liability -->
+  <section>
+    <h2>8. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, the Developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, goodwill, or other intangible losses, arising out of or in connection with your use of (or inability to use) the App.</p>
+    <p>Our total liability to you for any claim arising from these Terms or your use of the App shall not exceed the amount you paid us (if any) in the 12 months preceding the claim.</p>
+    <p><strong>Nothing in these Terms limits or excludes our liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by law in England and Wales.</strong></p>
+  </section>
+
+  <!-- 9. Availability & changes -->
+  <section>
+    <h2>9. Availability and changes</h2>
+    <p>We reserve the right to modify, suspend, or discontinue the App (or any part of it) at any time, with or without notice. We will try to give reasonable advance notice of significant changes.</p>
+    <p>We may update these Terms from time to time. When we do, we will update the effective date at the top of this page. If the changes are material, we will provide notice via the App or App Store / Google Play release notes. Your continued use of the App after the updated Terms are posted constitutes your acceptance of them.</p>
+    <p>We reserve the right to terminate or suspend your access to the App at any time for violation of these Terms, with or without notice.</p>
+  </section>
+
+  <!-- 10. Intellectual property -->
+  <section>
+    <h2>10. Intellectual property</h2>
+    <p>The App, including its design, graphics, text, animations, and underlying code, is owned by or licensed to the Developer and is protected by copyright, trademark, and other intellectual property laws.</p>
+    <p>The animal emoji used in the App are provided by the device operating system and are subject to Apple's or Google's respective licences. Map data displayed through Nominatim is © OpenStreetMap contributors, licensed under ODbL.</p>
+    <p>You may not reproduce, distribute, or create derivative works from the App or its content without our express written permission.</p>
+  </section>
+
+  <!-- 11. Governing law -->
+  <section>
+    <h2>11. Governing law and disputes</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of <strong>England and Wales</strong>. Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts of England and Wales, except where mandatory consumer protection law in your country of residence requires otherwise.</p>
+    <p>If you are a consumer resident in the European Union, you may also be entitled to use the EU Online Dispute Resolution platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+  </section>
+
+  <!-- 12. Apple / Google required terms -->
+  <section>
+    <h2>12. Additional terms for App Store and Google Play users</h2>
+
+    <h3>Apple App Store (iOS)</h3>
+    <p>If you downloaded the App from the Apple App Store, you acknowledge that:</p>
+    <ul>
+      <li>These Terms are between you and the Developer only, not with Apple, Inc.</li>
+      <li>Apple has no obligation to provide any maintenance or support for the App.</li>
+      <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price (if any). To the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to the App.</li>
+      <li>Apple is not responsible for addressing any claims by you or any third party relating to the App or your use of it.</li>
+      <li>Apple is a third-party beneficiary of these Terms and may enforce these Terms against you.</li>
+      <li>You represent that you are not located in a country subject to a US Government embargo, or designated as a "terrorist supporting" country, and are not on any US Government list of prohibited or restricted parties.</li>
+    </ul>
+
+    <h3>Google Play (Android)</h3>
+    <p>If you downloaded the App from Google Play, you acknowledge that:</p>
+    <ul>
+      <li>These Terms are between you and the Developer only, not with Google LLC.</li>
+      <li>Google has no obligation to provide any maintenance or support for the App.</li>
+      <li>Google is not responsible for addressing any claims by you or any third party relating to the App.</li>
+    </ul>
+  </section>
+
+  <!-- 13. General -->
+  <section>
+    <h2>13. General provisions</h2>
+    <p><strong>Entire agreement:</strong> These Terms, together with our Privacy Policy, constitute the entire agreement between you and us regarding your use of the App.</p>
+    <p><strong>Severability:</strong> If any provision of these Terms is held to be invalid or unenforceable, that provision will be modified to the minimum extent necessary to make it enforceable, and the remaining provisions will continue in full force.</p>
+    <p><strong>No waiver:</strong> Our failure to enforce any right or provision of these Terms will not be deemed a waiver of those rights.</p>
+    <p><strong>Assignment:</strong> You may not assign or transfer these Terms or any rights under them without our written consent. We may assign these Terms without restriction.</p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <h2>Contact us</h2>
+    <p>For questions about these Terms or any other enquiries about Date Night Sanctuary:</p>
+    <p><strong>Date Night Sanctuary</strong><br>
+    Independent developer, based in the United Kingdom</p>
+    <a class="contact-email" href="mailto:shanguaih@gmail.com">shanguaih@gmail.com</a>
+    <p style="margin-top:14px; font-size:13px; color:var(--muted);">We aim to respond to all enquiries within 5 business days.</p>
+  </div>
+
+</main>
+
+<footer>
+  <span>© 2026 Date Night Sanctuary. All rights reserved.</span>
+  <span>
+    <a href="privacy.html">Privacy Policy</a>
+    &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a>
+  </span>
+</footer>
+
+</body>
+</html>
