@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A date idea for you 💕 · Date Night Sanctuary</title>
+<meta property="og:title" content="A date idea for you 💕">
+<meta property="og:description" content="Tap to add it to your Date Night Sanctuary.">
+<style>
+  :root { --bg:#1C1C28; --card:#26263A; --cream:#FDFBD4; --lav:#C1BFFF; --orchid:#CF6DFC; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:linear-gradient(#26263A,#1C1C28); color:var(--cream);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; padding:16px; }
+  .card { width:100%; max-width:420px; background:var(--card); border:1.5px solid rgba(193,191,255,.3);
+          border-radius:24px; padding:28px 22px; text-align:center; }
+  .heart { font-size:44px; }
+  h1 { font-size:15px; font-weight:500; color:var(--lav); margin:10px 0 6px; letter-spacing:.5px; }
+  .name { font-size:24px; font-weight:700; color:var(--orchid); margin:0 0 8px; }
+  .comment { color:var(--lav); font-style:italic; font-size:14px; line-height:1.5; margin:0 0 22px; }
+  a.btn { display:block; background:var(--orchid); color:#fff; text-decoration:none; font-weight:700;
+          padding:15px; border-radius:14px; font-size:16px; }
+  .small { margin-top:16px; font-size:13px; color:rgba(193,191,255,.75); line-height:1.5; }
+  .small a { color:var(--lav); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💌</div>
+    <h1>Someone special has a date idea for you</h1>
+    <p class="name" id="name">A date night idea</p>
+    <p class="comment" id="comment"></p>
+    <a class="btn" id="open" href="#">Open in Date Night Sanctuary 💕</a>
+    <p class="small">Don't have the app yet?<br>
+      <a id="store" href="#">Get Date Night Sanctuary</a> and plan your date together.</p>
+  </div>
+<script>
+  var PKG = 'com.shanguaih.datenightsanctuary';
+  var STORE = 'https://play.google.com/store/apps/details?id=' + PKG;
+  var params = new URLSearchParams(location.search);
+  var name = params.get('name');
+  var comment = params.get('comment');
+  if (name) document.getElementById('name').textContent = name;
+  if (comment) document.getElementById('comment').textContent = comment;
+
+  var query = location.search.replace(/^\?/, '');
+  var isAndroid = /android/i.test(navigator.userAgent);
+  var appUrl = isAndroid
+    ? 'intent://idea?' + query + '#Intent;scheme=datenightsanctuary;package=' + PKG +
+      ';S.browser_fallback_url=' + encodeURIComponent(STORE) + ';end'
+    : 'datenightsanctuary://idea?' + query;
+
+  document.getElementById('open').href = appUrl;
+  document.getElementById('store').href = STORE;
+
+  // Try to open the app straight away; the button is there if the browser blocks it.
+  if (name) setTimeout(function () { window.location.href = appUrl; }, 300);
+</script>
+</body>
+</html>
